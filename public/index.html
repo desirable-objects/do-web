@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+<head>
+  <meta charset="utf-8">
+  <title>Desirable Objects Limited</title>
+  <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/app.css" />
+  <link rel="stylesheet" href="css/home.css" />
+  <link rel="stylesheet" href="lib/nivoslider/css/themes/dsrbl/dsrbl.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="lib/nivoslider/css/nivo-slider.css" type="text/css" media="screen" />
+  <script type="text/javascript" src="lib/jquery/js/jquery-1.7.1.min.js"></script>
+  <script type="text/javascript" src="lib/nivoslider/js/jquery.nivo.slider.js"></script>
+
+  <!--[if !IE 7]>
+    <link rel="stylesheet" href="css/ie7.css" />
+  <![endif]-->
+
+</head>
+<body>
+  <div id="wrap">
+    <div id="main">
+      <header class="banner">
+        <a href="#/" title="Home">
+          <img src="img/do-logo.png" alt="Desirable Objects Ltd" />
+          <h3>
+            High-satisfaction software.  
+          </h3>
+        </a>
+      </header>
+      <div ng-view></div>
+    </div>
+  </div>
+  <footer id="footer" class="container">
+    <div class="row">
+      <div class="span3">
+        <h4>About Us</h4>
+        <ul class="footer-listing">
+          <li><a href="#/approach">Our Approach</a></li>
+          <li><a href="#/technology">Technologies</a></li>
+          <!-- 
+          <li><a href="#/testimonial">Testimonials</a></li>
+          -->
+        </ul>
+      </div>
+      <div class="span3">
+        <h4>Hire Us</h4>
+        <ul class="footer-listing">
+          <li><a href="#/findus">Find us</a></li>
+          <li><a href="#/contact">Get in touch</a></li>
+        </ul>
+      </div>
+      <div class="span3">
+        <h4>Open Source</h4>
+        <ul class="footer-listing">
+          <li><a href="http://github.com/desirable-objects">Our Github</a></li>
+        </ul>
+      </div>
+      <div class="span3">
+        <h4>Corporate</h4>
+        <ul class="footer-listing">
+          <li>VAT Reg: 992 1270 13</li>
+          <li>Registered in the UK and Wales</li>
+          <li>Limited Company #7259267</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular.min.js"></script>
+  -->
+  <script src="lib/angular/angular.js"></script>
+  <script src="lib/angular/angular-resource.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/services.js"></script>
+  <script src="js/controllers.js"></script>
+  <script src="js/filters.js"></script>
+  <script src="js/directives.js"></script>
+  <script src="js/resources.js"></script>
+  <script src="js/helpers.js"></script>
+</body>
+</body>
+</html>

@@ -1,0 +1,99 @@
+/* app css stylesheet */
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.menu > li:nth-child(1):before {
+  content: "";
+  padding: 0;
+}
+
+html, body {height: 100%;}
+
+#wrap {min-height: 100%;}
+
+#main {
+  overflow:auto;
+  padding-bottom: 150px;
+}  /* must be same height as the footer */
+
+#footer {
+  position: relative;
+  margin-top: -150px; /* negative value of footer height */
+  height: 150px;
+  clear:both;
+  padding-top: 20px;
+} 
+
+/*Opera Fix*/
+body:before {
+  content:"";
+  height:100%;
+  float:left;
+  width:0;
+  margin-top:-32767px;/
+}
+
+.banner {
+  background-color: #eee;
+  padding: 60px 0 60px 60px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+.sectioned {
+  padding: 20px 0;
+}
+
+ul.footer-listing {
+  margin: 10px 0 0 0;
+  list-style: none;
+}
+
+.nicely-rounded {
+  -webkit-border-radius: 14px;
+  -moz-border-radius: 14px;
+  border-radius: 14px;
+}
+
+.lowlight {
+  color: #ddd;
+  background-color: #222;
+}
+.spaced-right {
+  margin-right: 10px;    
+}
+
+.ng-pristine .help-inline {
+  display: none;
+}
+.ng-pristine .error > label, .ng-pristine .error input, .ng-pristine .error textarea {
+  color: #fff;
+  border-color: #fff;
+}
+.lhs {
+  margin-right: 20px;
+}

@@ -1,0 +1,34 @@
+<section class="lowlight sectioned row">
+	<div class="container" ng-controller="ContactController">
+		<div class="span6">
+			<div class="lhs">
+				<h2>Contact us</h2>
+				<p>&nbsp;</p>
+				<div class="alert alert-error" ng-show="httpError">
+					<strong>How Embarrassing!</strong>
+					<p>An error occurred trying to send your message. This error was logged.</p>
+				</div>
+				<div class="alert alert-success" ng-show="success">
+					<strong>Thank you</strong>
+					<p>Your message was sent.</p>
+				</div>
+			</div>
+		</div>
+		<div class="slider-wrapper theme-dsrbl span6">
+		   	<form name="contactForm" novalidate>
+		   		<div class="control-group" ng-class="{error: contactForm.email.$invalid}">
+					<label>Email address</label>
+					<input type="email" name="email" ng-model="msg.email" required="true" placeholder="you@example.com">
+					<span class="help-inline" ng-show="contactForm.email.$error.required">Required</span>
+					<span class="help-inline" ng-show="contactForm.email.$error.email">This doesn't look like an email address!</span>
+				</div>
+				<div class="control-group" ng-class="{error: contactForm.message.$invalid}">
+					<label>Your message</label>
+					<textarea name="message" ng-model="msg.message" required="true" placeholder="Your message..." rows="7"></textarea>
+					<span class="help-inline" ng-show="contactForm.message.$error.required">Required</span>
+				</div>
+				<button type="submit" class="btn" ng-disabled="contactForm.$invalid" ng-click="send()">Submit</button>
+			</form>
+		</div>
+	</div>
+</section>

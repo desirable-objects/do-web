@@ -1,0 +1,21 @@
+.slider-wrapper {
+	width: 400px;
+	margin: 0 auto;
+}
+.nivoSlider {
+	border: 0;
+}
+.nivoSlider {
+    position: relative;
+    background:url(images/loading.gif) no-repeat 50% 50%;
+}
+.nivoSlider img {
+    position:absolute;
+    top:0px;
+    left:0px;
+    display:none;
+}
+.nivoSlider a {
+    border:0;
+    display:block;
+}
